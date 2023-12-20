@@ -1,0 +1,382 @@
+2023-06-28 16:18:49.910 [restartedMain] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: mdc-access-servlet-filter urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-06-28 16:18:49.910 [restartedMain] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], webServlet urls=[/h2-console/*]
+2023-06-28 16:18:54.496 [restartedMain] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-28 16:18:54.567 [restartedMain] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 99 mappings in 'requestMappingHandlerMapping'
+2023-06-28 16:18:54.601 [restartedMain] "  " DEBUG o.s.web.servlet.config.annotation.WebMvcConfigurer - Default resource handling disabled
+2023-06-28 16:18:54.610 [restartedMain] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/assets/**] in 'resourceHandlerMapping'
+2023-06-28 16:18:54.621 [restartedMain] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-28 16:18:54.843 [restartedMain] "  " DEBUG o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - Cannot resolve template loader path [classpath:/templates/] to [java.io.File]: using SpringTemplateLoader as fallback
+java.io.FileNotFoundException: class path resource [templates/] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:195)
+	at org.springframework.core.io.AbstractFileResolvingResource.getFile(AbstractFileResolvingResource.java:150)
+	at org.springframework.ui.freemarker.FreeMarkerConfigurationFactory.getTemplateLoaderForPath(FreeMarkerConfigurationFactory.java:345)
+	at org.springframework.ui.freemarker.FreeMarkerConfigurationFactory.createConfiguration(FreeMarkerConfigurationFactory.java:297)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer.afterPropertiesSet(FreeMarkerConfigurer.java:120)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.recruit.RecruitApplication.main(RecruitApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2023-06-28 16:18:54.991 [restartedMain] "  " DEBUG o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.recruit.module.message.WebSocket
+2023-06-28 16:18:56.560 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.603 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 面试管理(String), 面试(String)
+2023-06-28 16:18:56.633 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.637 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.638 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有可分配的权限(String), 管理员(String)
+2023-06-28 16:18:56.640 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.642 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.643 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 创建简历(String), 简历(String)
+2023-06-28 16:18:56.645 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.648 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.649 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 申请审核(String), 申请(String)
+2023-06-28 16:18:56.651 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.653 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.654 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新企业状态(String), 公司(String)
+2023-06-28 16:18:56.657 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.660 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.660 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 我的面试(String), 面试(String)
+2023-06-28 16:18:56.663 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.665 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.666 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新企业状态(String), 公司(String)
+2023-06-28 16:18:56.667 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.670 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.670 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查看我的收藏(String), 收藏职位(String)
+2023-06-28 16:18:56.672 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.674 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.675 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 删除一个权限组(String), 管理员(String)
+2023-06-28 16:18:56.677 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.679 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.680 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 删除一个权限组(String), 管理员(String)
+2023-06-28 16:18:56.681 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.683 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.696 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新一个权限组(String), 管理员(String)
+2023-06-28 16:18:56.697 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.702 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.702 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 删除用户(String), 管理员(String)
+2023-06-28 16:18:56.703 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.705 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.706 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 删除分类(String), 职位分类(String)
+2023-06-28 16:18:56.708 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.710 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.711 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查看已发布的职位(String), 职位(String)
+2023-06-28 16:18:56.712 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.715 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.716 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新一个权限组(String), 管理员(String)
+2023-06-28 16:18:56.717 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.721 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.722 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查看我的关注(String), 关注公司(String)
+2023-06-28 16:18:56.726 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.729 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.730 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 申请审核(String), 申请(String)
+2023-06-28 16:18:56.731 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.733 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.733 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 面试管理(String), 面试(String)
+2023-06-28 16:18:56.735 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.737 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.737 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 搜索日志(String), 日志(String)
+2023-06-28 16:18:56.739 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.741 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.742 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 下架职位(String), 职位(String)
+2023-06-28 16:18:56.743 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.747 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.747 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 删除分类(String), 职位分类(String)
+2023-06-28 16:18:56.748 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.750 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.751 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 新增关注(String), 关注公司(String)
+2023-06-28 16:18:56.752 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.754 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.755 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 分配单个权限(String), 管理员(String)
+2023-06-28 16:18:56.756 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.758 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.758 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 发布职位(String), 职位(String)
+2023-06-28 16:18:56.759 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.761 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.762 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 分配多个权限(String), 管理员(String)
+2023-06-28 16:18:56.763 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.764 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.765 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新企业信息(String), 公司(String)
+2023-06-28 16:18:56.766 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.768 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.768 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有权限组(String), 管理员(String)
+2023-06-28 16:18:56.770 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.771 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.772 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 简历排序(String), 申请(String)
+2023-06-28 16:18:56.773 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.775 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.775 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 删除用户(String), 管理员(String)
+2023-06-28 16:18:56.776 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.778 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.778 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 简历管理(String), 申请(String)
+2023-06-28 16:18:56.780 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.782 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.782 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 新增分类(String), 职位分类(String)
+2023-06-28 16:18:56.783 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.785 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.786 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新企业信息(String), 公司(String)
+2023-06-28 16:18:56.787 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.788 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.789 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 简历管理(String), 申请(String)
+2023-06-28 16:18:56.790 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.792 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.792 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 新建权限组(String), 管理员(String)
+2023-06-28 16:18:56.793 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.795 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.795 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新简历(String), 简历(String)
+2023-06-28 16:18:56.796 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.798 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.798 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 删除多个权限(String), 管理员(String)
+2023-06-28 16:18:56.799 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.801 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.802 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 新增分类(String), 职位分类(String)
+2023-06-28 16:18:56.803 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.805 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.805 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有可分配的权限(String), 管理员(String)
+2023-06-28 16:18:56.806 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.808 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.808 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 下架职位(String), 职位(String)
+2023-06-28 16:18:56.810 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.811 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.812 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 撤销申请(String), 申请(String)
+2023-06-28 16:18:56.813 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.815 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.815 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有用户(String), 管理员(String)
+2023-06-28 16:18:56.816 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.818 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.818 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 搜索日志(String), 日志(String)
+2023-06-28 16:18:56.819 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.821 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.821 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询一个权限组及其权限(String), 管理员(String)
+2023-06-28 16:18:56.823 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.824 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.825 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新职位(String), 职位(String)
+2023-06-28 16:18:56.826 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.827 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.828 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 企业认证(String), 公司(String)
+2023-06-28 16:18:56.829 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.830 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.831 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询简历(String), 简历(String)
+2023-06-28 16:18:56.832 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.833 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.834 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新职位(String), 职位(String)
+2023-06-28 16:18:56.835 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.836 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.836 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新职位状态(String), 职位(String)
+2023-06-28 16:18:56.837 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.839 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.839 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 我的投递箱(String), 申请(String)
+2023-06-28 16:18:56.841 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.842 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.842 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 企业认证(String), 公司(String)
+2023-06-28 16:18:56.844 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.845 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.845 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 分配多个权限(String), 管理员(String)
+2023-06-28 16:18:56.847 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.848 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.849 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新职位状态(String), 职位(String)
+2023-06-28 16:18:56.850 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.851 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.852 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 面试管理(String), 面试(String)
+2023-06-28 16:18:56.853 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.854 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.855 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查看我的关注(String), 关注公司(String)
+2023-06-28 16:18:56.856 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.857 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.858 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 取消收藏(String), 收藏职位(String)
+2023-06-28 16:18:56.859 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.860 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.860 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 面试管理(String), 面试(String)
+2023-06-28 16:18:56.862 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.863 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.864 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 简历排序(String), 申请(String)
+2023-06-28 16:18:56.865 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.866 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.867 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 面试管理(String), 面试(String)
+2023-06-28 16:18:56.868 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.870 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.870 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 添加收藏(String), 收藏职位(String)
+2023-06-28 16:18:56.871 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.873 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.873 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询日志记录的用户(String), 日志(String)
+2023-06-28 16:18:56.874 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.876 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.876 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 撤销申请(String), 申请(String)
+2023-06-28 16:18:56.877 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.879 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.879 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 取消关注(String), 关注公司(String)
+2023-06-28 16:18:56.880 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.882 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.882 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有用户(String), 管理员(String)
+2023-06-28 16:18:56.883 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.885 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.885 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查看分类列表(String), 职位分类(String)
+2023-06-28 16:18:56.888 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.889 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.890 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有权限组及其权限(String), 管理员(String)
+2023-06-28 16:18:56.891 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.893 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.893 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 取消收藏(String), 收藏职位(String)
+2023-06-28 16:18:56.894 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.896 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.896 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 发布职位(String), 职位(String)
+2023-06-28 16:18:56.898 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.899 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.900 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 分配单个权限(String), 管理员(String)
+2023-06-28 16:18:56.901 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.903 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.903 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 投递简历(String), 申请(String)
+2023-06-28 16:18:56.904 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.905 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.906 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 创建简历(String), 简历(String)
+2023-06-28 16:18:56.907 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.909 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.910 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 新增关注(String), 关注公司(String)
+2023-06-28 16:18:56.911 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.912 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.913 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询一个权限组及其权限(String), 管理员(String)
+2023-06-28 16:18:56.914 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.916 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.916 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 我的投递箱(String), 申请(String)
+2023-06-28 16:18:56.917 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.919 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.919 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 新建权限组(String), 管理员(String)
+2023-06-28 16:18:56.921 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.923 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.924 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 管理员更新用户信息(String), 管理员(String)
+2023-06-28 16:18:56.925 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.927 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.927 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 投递简历(String), 申请(String)
+2023-06-28 16:18:56.928 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.930 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.930 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 删除多个权限(String), 管理员(String)
+2023-06-28 16:18:56.932 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.933 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.934 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询简历(String), 简历(String)
+2023-06-28 16:18:56.935 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.936 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.937 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查看已发布的职位(String), 职位(String)
+2023-06-28 16:18:56.938 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.940 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.940 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询日志记录的用户(String), 日志(String)
+2023-06-28 16:18:56.941 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.943 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.943 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 面试管理(String), 面试(String)
+2023-06-28 16:18:56.944 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.946 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.946 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有日志(String), 日志(String)
+2023-06-28 16:18:56.947 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.949 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.949 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新分类(String), 职位分类(String)
+2023-06-28 16:18:56.951 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.952 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.953 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查看分类列表(String), 职位分类(String)
+2023-06-28 16:18:56.954 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.955 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.956 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有权限组及其权限(String), 管理员(String)
+2023-06-28 16:18:56.957 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.959 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.959 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 修改用户密码(String), 管理员(String)
+2023-06-28 16:18:56.960 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.962 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.962 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 我的面试(String), 面试(String)
+2023-06-28 16:18:56.964 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.966 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.966 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新简历(String), 简历(String)
+2023-06-28 16:18:56.967 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.969 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.969 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 添加收藏(String), 收藏职位(String)
+2023-06-28 16:18:56.970 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.972 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.973 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有日志(String), 日志(String)
+2023-06-28 16:18:56.974 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.976 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.976 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 修改用户密码(String), 管理员(String)
+2023-06-28 16:18:56.977 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.979 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.979 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查看我的收藏(String), 收藏职位(String)
+2023-06-28 16:18:56.981 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.982 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.982 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 管理员更新用户信息(String), 管理员(String)
+2023-06-28 16:18:56.983 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.985 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.985 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有权限组(String), 管理员(String)
+2023-06-28 16:18:56.986 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.988 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.988 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 更新分类(String), 职位分类(String)
+2023-06-28 16:18:56.989 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.991 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL AND (name = ? AND module = ?)
+2023-06-28 16:18:56.991 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - ==> Parameters: 取消关注(String), 关注公司(String)
+2023-06-28 16:18:56.992 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectOne - <==      Total: 1
+2023-06-28 16:18:56.997 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectList - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM permission WHERE delete_time IS NULL
+2023-06-28 16:18:56.998 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectList - ==> Parameters: 
+2023-06-28 16:18:57.003 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.selectList - <==      Total: 54
+2023-06-28 16:18:57.007 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL
+2023-06-28 16:18:57.011 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==> Parameters: 查看简历详情(String), 简历(String), true(Boolean), 2021-04-16 08:35:54.021(Timestamp), 2022-09-25 00:39:32.478(Timestamp), 8(Integer)
+2023-06-28 16:18:57.013 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - <==    Updates: 1
+2023-06-28 16:18:57.014 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL
+2023-06-28 16:18:57.015 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==> Parameters: 职位审核(String), 职位(String), true(Boolean), 2021-04-16 09:34:30.746(Timestamp), 2022-09-25 00:39:32.482(Timestamp), 10(Integer)
+2023-06-28 16:18:57.016 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - <==    Updates: 1
+2023-06-28 16:18:57.017 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL
+2023-06-28 16:18:57.017 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==> Parameters: 查看职位详细信息(String), 职位(String), true(Boolean), 2021-04-16 09:34:30.843(Timestamp), 2022-09-25 00:39:32.486(Timestamp), 12(Integer)
+2023-06-28 16:18:57.019 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - <==    Updates: 1
+2023-06-28 16:18:57.020 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL
+2023-06-28 16:18:57.021 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==> Parameters: 企业审核(String), 公司(String), true(Boolean), 2021-04-16 09:40:34.825(Timestamp), 2022-09-25 00:39:32.497(Timestamp), 17(Integer)
+2023-06-28 16:18:57.022 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - <==    Updates: 1
+2023-06-28 16:18:57.023 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL
+2023-06-28 16:18:57.024 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==> Parameters: 用户列表(String), 管理员(String), true(Boolean), 2022-04-10 07:51:53.107(Timestamp), 2022-09-25 00:39:32.579(Timestamp), 55(Integer)
+2023-06-28 16:18:57.025 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - <==    Updates: 1
+2023-06-28 16:18:57.026 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL
+2023-06-28 16:18:57.027 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==> Parameters: 管理员(String), 管理员(String), true(Boolean), 2022-04-10 07:56:39.29(Timestamp), 2022-09-25 00:39:32.581(Timestamp), 56(Integer)
+2023-06-28 16:18:57.028 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - <==    Updates: 1
+2023-06-28 16:18:57.029 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL
+2023-06-28 16:18:57.030 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==> Parameters: 我的沟通(String), 沟通(String), true(Boolean), 2022-09-24 04:56:30.133(Timestamp), 2022-09-25 01:18:06.321(Timestamp), 57(Integer)
+2023-06-28 16:18:57.031 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - <==    Updates: 1
+2023-06-28 16:18:57.032 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL
+2023-06-28 16:18:57.033 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - ==> Parameters: 我的沟通(String), 沟通(String), true(Boolean), 2022-09-24 04:56:30.133(Timestamp), 2022-09-25 01:18:06.321(Timestamp), 58(Integer)
+2023-06-28 16:18:57.035 [restartedMain] "  " DEBUG com.recruit.mapper.PermissionMapper.updateById - <==    Updates: 1
+2023-06-28 17:09:48.005 [http-nio-5000-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-06-28 17:09:48.049 [http-nio-5000-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-06-28 17:09:48.074 [http-nio-5000-exec-3] "GET /recruit/category HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/recruit/category", parameters={}
+2023-06-28 17:09:48.074 [http-nio-5000-exec-1] "GET /recruit/company/find HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/recruit/company/find", parameters={}
+2023-06-28 17:09:48.074 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/recruit/position/page/keyword?page=0&count=12&keyword=", parameters={masked}
+2023-06-28 17:09:48.082 [http-nio-5000-exec-3] "GET /recruit/category HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.recruit.controller.CategoryController#getAll()
+2023-06-28 17:09:48.082 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.recruit.controller.PositionController#pageKeyword(Integer, Integer, String)
+2023-06-28 17:09:48.082 [http-nio-5000-exec-1] "GET /recruit/company/find HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.recruit.controller.CompanyController#findHot()
+2023-06-28 17:09:48.157 [http-nio-5000-exec-3] "GET /recruit/category HTTP/1.1" DEBUG com.recruit.mapper.CategoryMapper.selectList - ==>  Preparing: SELECT id,name,key_word,description,create_time,update_time,delete_time FROM category WHERE delete_time IS NULL
+2023-06-28 17:09:48.159 [http-nio-5000-exec-3] "GET /recruit/category HTTP/1.1" DEBUG com.recruit.mapper.CategoryMapper.selectList - ==> Parameters: 
+2023-06-28 17:09:48.160 [http-nio-5000-exec-1] "GET /recruit/company/find HTTP/1.1" DEBUG com.recruit.mapper.CompanyMapper.findHotCompany - ==>  Preparing: SELECT * FROM `company` where delete_time is null and state = 1
+2023-06-28 17:09:48.160 [http-nio-5000-exec-1] "GET /recruit/company/find HTTP/1.1" DEBUG com.recruit.mapper.CompanyMapper.findHotCompany - ==> Parameters: 
+2023-06-28 17:09:48.195 [http-nio-5000-exec-1] "GET /recruit/company/find HTTP/1.1" DEBUG com.recruit.mapper.CompanyMapper.findHotCompany - <==      Total: 10
+2023-06-28 17:09:48.196 [http-nio-5000-exec-3] "GET /recruit/category HTTP/1.1" DEBUG com.recruit.mapper.CategoryMapper.selectList - <==      Total: 20
+2023-06-28 17:09:48.227 [http-nio-5000-exec-3] "GET /recruit/category HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-06-28 17:09:48.229 [http-nio-5000-exec-3] "GET /recruit/category HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[CategoryDO(name=Java开发, keyWord=Java, description=搜索Java开发相关的职位), CategoryDO(name=C++开发, keyWord=C+ (truncated)...]
+2023-06-28 17:09:48.228 [http-nio-5000-exec-1] "GET /recruit/company/find HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-06-28 17:09:48.230 [http-nio-5000-exec-1] "GET /recruit/company/find HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[CompanyDO(name=阿里巴巴, foreignName=Alibaba, city=中国杭州1, logo=https://tse3-mm.cn.bing.net/th/id/OIP-C. (truncated)...]
+2023-06-28 17:09:48.283 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" DEBUG com.recruit.mapper.PositionMapper.getPageByKeyword - ==>  Preparing: SELECT COUNT(1) FROM position p LEFT JOIN company c ON p.company_id = c.id LEFT JOIN category ca ON p.category_id = ca.id WHERE p.state = 1 AND p.delete_time IS NULL AND p.title LIKE concat('%', ?, '%')
+2023-06-28 17:09:48.284 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" DEBUG com.recruit.mapper.PositionMapper.getPageByKeyword - ==> Parameters: (String)
+2023-06-28 17:09:48.306 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" DEBUG com.recruit.mapper.PositionMapper.getPageByKeyword - ==>  Preparing: SELECT p.*,c.id as company_id,c.name as company_name,c.description as company_desc,c.logo as logo,ca.id as category_id,ca.name as category_name FROM position p left join company c on p.company_id = c.id left join category ca on p.category_id = ca.id where p.state = 1 and p.delete_time is null and p.title like concat('%',?,'%') LIMIT ?
+2023-06-28 17:09:48.307 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" DEBUG com.recruit.mapper.PositionMapper.getPageByKeyword - ==> Parameters: (String), 12(Long)
+2023-06-28 17:09:48.317 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" DEBUG com.recruit.mapper.PositionMapper.getPageByKeyword - <==      Total: 12
+2023-06-28 17:09:48.323 [http-nio-5000-exec-3] "GET /recruit/category HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2023-06-28 17:09:48.325 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-06-28 17:09:48.326 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [PageResponseVO(total=47, items=[PositionResultDO(CategoryName=Java开发, CompanyName=阿里巴巴, CompanyDesc= (truncated)...]
+2023-06-28 17:09:48.328 [http-nio-5000-exec-1] "GET /recruit/company/find HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2023-06-28 17:09:48.341 [http-nio-5000-exec-2] "GET /recruit/position/page/keyword HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK

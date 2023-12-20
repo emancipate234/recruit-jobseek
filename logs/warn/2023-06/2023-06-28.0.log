@@ -1,0 +1,2 @@
+2023-06-28 16:18:50.452 [restartedMain] "  " WARN  c.b.mybatisplus.core.injector.AbstractMethod - [com.recruit.mapper.NotifyMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2023-06-28 16:18:54.863 [restartedMain] "  " WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)

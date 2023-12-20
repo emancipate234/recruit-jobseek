@@ -1,0 +1,34 @@
+2023-07-02 08:28:16.315 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2023-07-02 08:28:16.335 [restartedMain] "  " INFO  com.recruit.RecruitApplication - Starting RecruitApplication on LAPTOP-4ODJPNHE with PID 1876 (C:\Users\13914\Desktop\project\recruit_system-master\recruit-system\recruit-sys\target\classes started by 13914 in C:\Users\13914\Desktop\project\recruit_system-master)
+2023-07-02 08:28:16.335 [restartedMain] "  " INFO  com.recruit.RecruitApplication - The following profiles are active: dev
+2023-07-02 08:28:16.385 [restartedMain] "  " INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-02 08:28:17.464 [restartedMain] "  " INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-02 08:28:17.464 [restartedMain] "  " INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-02 08:28:17.564 [restartedMain] "  " INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82ms. Found 0 Redis repository interfaces.
+2023-07-02 08:28:18.144 [restartedMain] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [com.recruit.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-02 08:28:18.554 [restartedMain] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2023-07-02 08:28:18.564 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2023-07-02 08:28:18.564 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-02 08:28:18.574 [restartedMain] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-07-02 08:28:18.574 [restartedMain] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-07-02 08:28:18.574 [restartedMain] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-07-02 08:28:18.574 [restartedMain] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-07-02 08:28:18.594 [restartedMain] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-07-02 08:28:18.744 [restartedMain] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-02 08:28:18.744 [restartedMain] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2359 ms
+2023-07-02 08:28:18.855 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-02 08:28:19.030 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-02 08:28:19.035 [restartedMain] "  " INFO  o.s.b.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://127.0.0.1:3306/recruit_system?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8&allowPublicKeyRetrieval=true'
+2023-07-02 08:28:26.993 [restartedMain] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-02 08:28:27.821 [restartedMain] "  " INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-02 08:28:27.885 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2023-07-02 08:28:29.447 [restartedMain] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-02 08:28:29.461 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-02 08:28:29.468 [restartedMain] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-02 08:28:29.471 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-5000"]
+2023-07-02 08:28:29.471 [restartedMain] "  " INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-07-02 08:28:29.474 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-5000"]
+2023-07-02 08:28:29.475 [restartedMain] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-5000"]
+2023-07-02 08:28:29.482 [restartedMain] "  " INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

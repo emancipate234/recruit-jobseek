@@ -1,0 +1,14 @@
+2023-07-02 08:28:29.485 [restartedMain] "  " ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 5000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 5000 or configure this application to listen on another port.
+

@@ -1,0 +1,64 @@
+2023-07-01 10:06:24.089 [restartedMain] "  " WARN  c.b.mybatisplus.core.injector.AbstractMethod - [com.recruit.mapper.NotifyMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2023-07-01 10:06:27.796 [restartedMain] "  " WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-07-01 10:16:11.198 [http-nio-5000-exec-1] "GET /recruit/user/getGroup/6 HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.github.talelin.autoconfigure.exception.TokenExpiredException: Token Expired]
+2023-07-01 15:01:05.498 [http-nio-5000-exec-9] "POST /recruit/user/login HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.github.talelin.autoconfigure.exception.ParameterException: Parameters Error]
+2023-07-01 15:25:50.962 [http-nio-5000-exec-1] "POST /recruit/user/getMailCode HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:26:22.068 [http-nio-5000-exec-5] "POST /recruit/user/register HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:26:36.616 [http-nio-5000-exec-3] "POST /recruit/user/register HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:27:03.982 [restartedMain] "  " WARN  c.b.mybatisplus.core.injector.AbstractMethod - [com.recruit.mapper.NotifyMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2023-07-01 15:27:08.958 [restartedMain] "  " WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-07-01 15:29:20.042 [http-nio-5000-exec-4] "POST /recruit/user/getMailCode HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:29:36.810 [http-nio-5000-exec-7] "POST /recruit/user/register HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:29:39.270 [http-nio-5000-exec-8] "POST /recruit/user/register HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:31:17.762 [restartedMain] "  " WARN  c.b.mybatisplus.core.injector.AbstractMethod - [com.recruit.mapper.NotifyMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2023-07-01 15:31:22.071 [restartedMain] "  " WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-07-01 15:33:00.387 [http-nio-5000-exec-4] "POST /recruit/user/getMailCode HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:33:12.479 [http-nio-5000-exec-5] "POST /recruit/user/register HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:33:14.502 [http-nio-5000-exec-6] "POST /recruit/user/register HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:33:16.536 [http-nio-5000-exec-7] "POST /recruit/user/register HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:33:36.282 [http-nio-5000-exec-5] "POST /recruit/user/register HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:33:38.351 [http-nio-5000-exec-6] "POST /recruit/user/register HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:33:53.103 [http-nio-5000-exec-8] "POST /recruit/user/register HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379]
+2023-07-01 15:37:34.553 [http-nio-5000-exec-7] "GET /recruit/hr-company/26 HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.github.talelin.autoconfigure.exception.NotFoundException: Not Found]
+2023-07-01 16:03:10.303 [http-nio-5000-exec-9] "GET /recruit/hr-company/26 HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.github.talelin.autoconfigure.exception.NotFoundException: Not Found]
+2023-07-01 21:11:51.557 [restartedMain] "  " WARN  c.b.mybatisplus.core.injector.AbstractMethod - [com.recruit.mapper.NotifyMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2023-07-01 21:11:56.500 [restartedMain] "  " WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-07-01 21:29:21.823 [http-nio-5000-exec-9] "POST /recruit/position HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "1.2W": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "1.2W": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 107] (through reference chain: com.recruit.dto.position.CreateOrUpdatePositionDTO["salary_down"])]
+2023-07-01 21:36:45.389 [http-nio-5000-exec-7] "POST /recruit/category HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'key_word' doesn't have a default value
+### The error may exist in com/recruit/mapper/CategoryMapper.java (best guess)
+### The error may involve com.recruit.mapper.CategoryMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO category  ( name,  description )  VALUES  ( ?,  ? )
+### Cause: java.sql.SQLException: Field 'key_word' doesn't have a default value
+; Field 'key_word' doesn't have a default value; nested exception is java.sql.SQLException: Field 'key_word' doesn't have a default value]
+2023-07-01 21:39:19.569 [http-nio-5000-exec-8] "POST /recruit/category HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'key_word' doesn't have a default value
+### The error may exist in com/recruit/mapper/CategoryMapper.java (best guess)
+### The error may involve com.recruit.mapper.CategoryMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO category  ( name,  description )  VALUES  ( ?,  ? )
+### Cause: java.sql.SQLException: Field 'key_word' doesn't have a default value
+; Field 'key_word' doesn't have a default value; nested exception is java.sql.SQLException: Field 'key_word' doesn't have a default value]
+2023-07-01 21:39:25.647 [http-nio-5000-exec-6] "POST /recruit/category HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'key_word' doesn't have a default value
+### The error may exist in com/recruit/mapper/CategoryMapper.java (best guess)
+### The error may involve com.recruit.mapper.CategoryMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO category  ( name,  description )  VALUES  ( ?,  ? )
+### Cause: java.sql.SQLException: Field 'key_word' doesn't have a default value
+; Field 'key_word' doesn't have a default value; nested exception is java.sql.SQLException: Field 'key_word' doesn't have a default value]
+2023-07-01 21:40:21.051 [http-nio-5000-exec-9] "POST /recruit/category HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'key_word' doesn't have a default value
+### The error may exist in com/recruit/mapper/CategoryMapper.java (best guess)
+### The error may involve com.recruit.mapper.CategoryMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO category  ( name,  description )  VALUES  ( ?,  ? )
+### Cause: java.sql.SQLException: Field 'key_word' doesn't have a default value
+; Field 'key_word' doesn't have a default value; nested exception is java.sql.SQLException: Field 'key_word' doesn't have a default value]
+2023-07-01 21:47:35.579 [http-nio-5000-exec-2] "GET /recruit/hr-company/20 HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.github.talelin.autoconfigure.exception.NotFoundException: Not Found]
+2023-07-01 21:58:42.111 [http-nio-5000-exec-4] "GET /recruit/hr-company/20 HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.github.talelin.autoconfigure.exception.NotFoundException: Not Found]
+2023-07-01 22:21:24.739 [restartedMain] "  " WARN  c.b.mybatisplus.core.injector.AbstractMethod - [com.recruit.mapper.NotifyMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2023-07-01 22:21:29.362 [restartedMain] "  " WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-07-01 23:09:44.565 [http-nio-5000-exec-3] "GET /recruit/hr-company/20 HTTP/1.1" WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.github.talelin.autoconfigure.exception.NotFoundException: Not Found]

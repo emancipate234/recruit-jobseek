@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: 13914
+Build-Jdk: 13.0.2
+Implementation-Title: recruit-sys
+Implementation-Version: 0.2.0-RC2
+Implementation-Vendor-Id: io.github.talelin
+Main-Class: ${start-class}
+
